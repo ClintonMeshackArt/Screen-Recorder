@@ -1,0 +1,118 @@
+h1 {
+  color: #9cb080;
+  text-align: center;
+}
+
+h2 {
+  color: #618764;
+}
+
+.recorder {
+  background-color: #2b5748;
+  padding: 20px;
+  min-height: 200px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+body {
+  background-color: #273338;
+  border-radius: 10px;
+  margin: 0;
+  min-width: 320px;
+}
+
+button {
+  background-color: #9cb080;
+  border-radius: 5px;
+  border-color: #349776;
+  cursor: pointer;
+  font: inherit;
+  max-width: 100%;
+  padding: 12px 18px;
+}
+
+.recorder-details,
+.recorder-error {
+  color: #f4f7ef;
+  line-height: 1.5;
+  margin: 12px auto 20px;
+  max-width: 100%;
+}
+
+.recorder-error {
+  color: #ffd0c5;
+}
+
+@media (max-width: 600px) {
+  .recorder {
+    margin: 16px;
+    padding: 18px 14px;
+  }
+
+  .recorder h2 {
+    font-size: 1.35rem;
+  }
+
+  .navbar ul {
+    flex-wrap: wrap;
+    gap: 14px 24px;
+    justify-content: center;
+  }
+
+  .navbar {
+    padding: 12px;
+  }
+}
+
+.footer {
+  text-align: center;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 10px;
+  background-color: #2b5748;
+}
+
+/* navbar */
+/* Navbar container */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #2b5748; /* your palette */
+  padding: 15px 0;
+  display: flex;
+  justify-content: center; /* centers the menu */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* professional shadow */
+  z-index: 1000;
+}
+
+/* Navbar list */
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 40px; /* spacing between items */
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar links */
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #9cb080; /* hover accent from your palette */
+}
+
+/* Page content */
+.content {
+  margin-top: 100px; /* push content below navbar */
+  text-align: center;
+  padding: 20px;
+}
